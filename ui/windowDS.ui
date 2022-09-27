@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1246</width>
+    <height>742</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>安全检测系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../GNSSAMS-main/source/icon/satall.png</normaloff>../../GNSSAMS-main/source/icon/satall.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{background-color:lightblue}</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{background-color:transparent}</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QPushButton" name="pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{background-color:transparent}
+QPushButton{border:2px}
+QPushButton{border-radius:10px}
+QPushButton{padding:2px 2px 2px 2px}
+QPushButton{word-wrap: break-word}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normalon>../../GNSSAMS-main/source/icon/animation.png</normalon>
+         </iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{background-color:transparent}
+QPushButton{border:2px}
+QPushButton{border-radius:10px}
+QPushButton{padding:2px 2px 2px 2px}
+QPushButton{word-wrap: break-word}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../GNSSAMS-main/source/icon/sd.png</normaloff>../../GNSSAMS-main/source/icon/sd.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{background-color:transparent}
+QPushButton{border:2px}
+QPushButton{border-radius:10px}
+QPushButton{padding:2px 2px 2px 2px}
+QPushButton{word-wrap: break-word}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../GNSSAMS-main/source/icon/document.png</normaloff>../../GNSSAMS-main/source/icon/document.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{background-color:transparent}
+QPushButton{border:2px}
+QPushButton{border-radius:10px}
+QPushButton{padding:2px 2px 2px 2px}
+QPushButton{word-wrap: break-word}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../GNSSAMS-main/source/icon/more.png</normaloff>../../GNSSAMS-main/source/icon/more.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true"/>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true"/>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_4" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QWidget" name="xray_widget" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>X光图像</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="minimumSize">
+                 <size>
+                  <width>400</width>
+                  <height>350</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="raman_widget" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="text">
+                 <string>拉曼</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="minimumSize">
+                 <size>
+                  <width>400</width>
+                  <height>350</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QWidget" name="metal_widget" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="1" column="1">
+               <widget class="QLabel" name="label_5">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>60</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>200</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>参数1</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QTextBrowser" name="textBrowser_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>200</width>
+                  <height>50</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1" colspan="2">
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string>金属探测</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QTextBrowser" name="textBrowser">
+                <property name="maximumSize">
+                 <size>
+                  <width>200</width>
+                  <height>50</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLabel" name="label_6">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>60</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>200</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>参数2</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="2" column="0">
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="3">
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="2" column="3">
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>结果分析</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="menuItem_new"/>
+   <addaction name="separator"/>
+   <addaction name="menuItem_openFile"/>
+   <addaction name="separator"/>
+   <addaction name="menuItem_saveFile"/>
+   <addaction name="separator"/>
+   <addaction name="munuItem_windowSet"/>
+   <addaction name="separator"/>
+   <addaction name="menuItem_resultReport"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="munuItem_systemPara"/>
+   <addaction name="munuItem_statusBar"/>
+   <addaction name="munuItem_fileStatusBar"/>
+   <addaction name="munuItem_localHelp"/>
+   <addaction name="munuItem_onlineHelp"/>
+   <addaction name="separator"/>
+   <addaction name="munuItem_contact"/>
+  </widget>
+  <action name="menuItem_new">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/baogao.png</normaloff>../../GNSSAMS-main/source/icon/baogao.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建(&amp;N)</string>
+   </property>
+  </action>
+  <action name="menuItem_openFile">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/icon.png</normaloff>../../GNSSAMS-main/source/icon/icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件(&amp;O)</string>
+   </property>
+  </action>
+  <action name="menuItem_saveFile">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/save.png</normaloff>../../GNSSAMS-main/source/icon/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存文件(&amp;S)</string>
+   </property>
+  </action>
+  <action name="menuItem_quitSystem">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/decentralized-02.png</normaloff>../../GNSSAMS-main/source/icon/decentralized-02.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出系统(&amp;Q)</string>
+   </property>
+  </action>
+  <action name="munuItem_markbook">
+   <property name="text">
+    <string>电子手簿(&amp;P)</string>
+   </property>
+   <property name="iconText">
+    <string>徕卡GSI格式解析与水准电子手簿(P)</string>
+   </property>
+  </action>
+  <action name="munuItem_controlNet">
+   <property name="text">
+    <string>地面控制网平差(&amp;D)</string>
+   </property>
+  </action>
+  <action name="munuItem_railwayCurve">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>铁路曲线计算(&amp;T)</string>
+   </property>
+  </action>
+  <action name="munuItem_CPIII">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>CPIII控制网平差(&amp;C)</string>
+   </property>
+  </action>
+  <action name="munuItem_GNSSNet">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>静态GNSS网平差(&amp;A)</string>
+   </property>
+  </action>
+  <action name="munuItem_cacuPara">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/designer-tools.png</normaloff>../../GNSSAMS-main/source/icon/designer-tools.png</iconset>
+   </property>
+   <property name="text">
+    <string>计算参数(&amp;P)</string>
+   </property>
+  </action>
+  <action name="munuItem_systemPara">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/set.png</normaloff>../../GNSSAMS-main/source/icon/set.png</iconset>
+   </property>
+   <property name="text">
+    <string>系统参数(&amp;S)</string>
+   </property>
+  </action>
+  <action name="munuItem_windowSet">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/calender.png</normaloff>../../GNSSAMS-main/source/icon/calender.png</iconset>
+   </property>
+   <property name="text">
+    <string>界面设置(&amp;W)</string>
+   </property>
+  </action>
+  <action name="munuItem_onlineHelp">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/lineOneline.png</normaloff>../../GNSSAMS-main/source/icon/lineOneline.png</iconset>
+   </property>
+   <property name="text">
+    <string>在线帮助(&amp;I)</string>
+   </property>
+  </action>
+  <action name="munuItem_localHelp">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/line.png</normaloff>../../GNSSAMS-main/source/icon/line.png</iconset>
+   </property>
+   <property name="text">
+    <string>本地文档(&amp;I)</string>
+   </property>
+  </action>
+  <action name="menuItem_resultReport">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/zaogao.png</normaloff>../../GNSSAMS-main/source/icon/zaogao.png</iconset>
+   </property>
+   <property name="text">
+    <string>导出报告(&amp;O)</string>
+   </property>
+  </action>
+  <action name="munuItem_version">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/note.png</normaloff>../../GNSSAMS-main/source/icon/note.png</iconset>
+   </property>
+   <property name="text">
+    <string>版本信息(&amp;V)</string>
+   </property>
+  </action>
+  <action name="menuItem_backWelcome">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/resu.png</normaloff>../../GNSSAMS-main/source/icon/resu.png</iconset>
+   </property>
+   <property name="text">
+    <string>返回欢迎界面(&amp;B)</string>
+   </property>
+  </action>
+  <action name="munuItem_statusBar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/mes.png</normaloff>../../GNSSAMS-main/source/icon/mes.png</iconset>
+   </property>
+   <property name="text">
+    <string>状态信息栏(&amp;S) </string>
+   </property>
+  </action>
+  <action name="munuItem_fileStatusBar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/tree.png</normaloff>../../GNSSAMS-main/source/icon/tree.png</iconset>
+   </property>
+   <property name="text">
+    <string>文件列表栏(&amp;F)</string>
+   </property>
+  </action>
+  <action name="munuItem_license">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/icon_any.png</normaloff>../../GNSSAMS-main/source/icon/icon_any.png</iconset>
+   </property>
+   <property name="text">
+    <string>授权注册(&amp;L)</string>
+   </property>
+  </action>
+  <action name="munuItem_stablePointGround">
+   <property name="text">
+    <string>稳定点组分析(&amp;X)</string>
+   </property>
+  </action>
+  <action name="munuItem_satellite">
+   <property name="text">
+    <string>卫星轨道解算与预测(&amp;S)</string>
+   </property>
+  </action>
+  <action name="munuItem_coorSystemTran">
+   <property name="text">
+    <string>坐标系统转换(&amp;S)</string>
+   </property>
+  </action>
+  <action name="munuItem_coorTran">
+   <property name="text">
+    <string>坐标(系)转换</string>
+   </property>
+  </action>
+  <action name="munuItem_GussianTran">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>高斯坐标正反算(&amp;S)</string>
+   </property>
+  </action>
+  <action name="munuItem_contact">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../GNSSAMS-main/source/icon/chat.png</normaloff>../../GNSSAMS-main/source/icon/chat.png</iconset>
+   </property>
+   <property name="text">
+    <string>联系方式(&amp;L)</string>
+   </property>
+  </action>
+  <action name="menuItem_SPP">
+   <property name="text">
+    <string>标准单点定位SPP(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionPPP_P">
+   <property name="text">
+    <string>PPP精密单点定位(&amp;P)</string>
+   </property>
+  </action>
+  <action name="action_G">
+   <property name="text">
+    <string>星体重力场反演(&amp;G)</string>
+   </property>
+  </action>
+  <action name="actionGNSS_L">
+   <property name="text">
+    <string>GNSS与重力场应用(&amp;L)</string>
+   </property>
+  </action>
+  <action name="actionw">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>卫星测高(&amp;H)</string>
+   </property>
+  </action>
+  <action name="actionsd">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>路线规划与导航(&amp;D)</string>
+   </property>
+  </action>
+  <action name="actionsd_2">
+   <property name="text">
+    <string>GNSS地图测量</string>
+   </property>
+  </action>
+  <action name="actions">
+   <property name="text">
+    <string>三维重建与时序形变监测(&amp;W)</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
